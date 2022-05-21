@@ -6,6 +6,7 @@
       </a>
     </nav>
 
+  <div  class="nav-container">
   <nav class="navigation-top-container">
           <div class="navigation-top-left">
             <h2 class="follow">FOLLOW FC BARCELONA</h2>
@@ -56,7 +57,12 @@
                       </div>
                     </div>
                    </div>
-                   <div class="tabs">
+          </div>
+         </div>
+        </nav>
+
+        <div>
+         <div class="tabs">
         <div
           class="tabs-item"
           v-for="(item) in tabs_ls"
@@ -70,11 +76,9 @@
           </div>
         </div>
       </div>
-            
-
-          </div>
          </div>
-        </nav>
+
+         </div>
    
   </div>
 </template>
@@ -179,10 +183,10 @@ a {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    padding: 0;
     //  margin-right: 20px;
-
-  background-color: rgb(1, 1, 41);
-  height: 50px;
+   background-color: rgb(1, 1, 41);
+   height: 50px;
 }
 .navigation-top-left{
   display: flex;
@@ -246,6 +250,10 @@ a {
     background: linear-gradient(90deg,#8c1a17,#cd122d);
     background-image: linear-gradient(90deg, rgb(140, 26, 23), rgb(205, 18, 45));
   }
+
+  .nav-container{
+    width: 100%;
+  }
  .right-tip {
           height: 100%;
         .text {
@@ -257,11 +265,11 @@ a {
           padding-right: 30px;
           position: relative;
           height: 100%;
-          img {
-            margin: 0 8px;
-            height: 20px;
-            width: 20px;
-          }
+          // img {
+          //   margin: 0 8px;
+          //   height: 20px;
+          //   width: 20px;
+          // }
           .ul-float {
             color: #181733;
             width: 278px;
@@ -338,9 +346,10 @@ a {
           position: absolute;
           right: 20px;
         }
+      }
 
-        .tabs {
-      height: calc(100% - 36px);
+      .tabs {
+      height: 70px;
       display: flex;
       color: #fff;
       .tabs-item {
@@ -387,7 +396,6 @@ a {
         }
       }
     }
-      }
   
   
 </style>

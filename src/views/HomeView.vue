@@ -62,7 +62,7 @@ let tabs_ls = shallowReactive<tab_el[]>([
 let current_component = shallowRef<tab_el>(tabs_ls[0]);
 const nav_click = (item: tab_el) => {
   current_component.value = item;
-  console.log("父组件", item);
+  console.log("MenuBar", item);
 };
 </script>
 
